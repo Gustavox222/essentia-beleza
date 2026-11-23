@@ -446,3 +446,19 @@ html.reduce .quotes__pause { display: none; }
 .essence, .close { min-height: calc(100vh - var(--nav-h)); min-height: calc(100svh - var(--nav-h)); display: flex; align-items: center; }
 .essence > .wrap, .close > .wrap { width: min(var(--max), 100% - 2 * var(--gutter)); }
 @media (max-width: 900px) { .essence { min-height: 0; } }
+
+/* celular: telas de celular saturam o bege; tons mais leves e menos amarelados */
+@media (max-width: 900px) {
+  :root {
+    --bg: #f3ece3;
+    --surface: #ebe1d4;
+    --card: #faf6f0;
+    --blush: #ecd8cb;
+  }
+  .nav.is-scrolled { background: rgba(243, 236, 227, .92); }
+  .hero__glow {
+    background:
+      radial-gradient(70vw 60vw at 85% 20%, rgba(230, 205, 188, .45), transparent 70%),
+      radial-gradient(60vw 50vw at 5% 95%, rgba(220, 208, 190, .4), transparent 70%);
+  }
+}
